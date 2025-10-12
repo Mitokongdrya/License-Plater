@@ -3,7 +3,7 @@ export const states = [
     {
         code: "AL",
         name: "Alabama",
-        image: "/images/AL.png",
+        image: "/images/AL.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/AL.png" },
             { id: 2, name: "Sweet Home Alabama", image: "/plates/AL-sweethome.png" },
@@ -12,7 +12,7 @@ export const states = [
     {
         code: "AK",
         name: "Alaska",
-        image: "/images/AK.png",
+        image: "/images/AK.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/AK.png" },
             { id: 2, name: "Bear", image: "/plates/AK-bear.png" },
@@ -21,7 +21,7 @@ export const states = [
     {
         code: "AZ",
         name: "Arizona",
-        image: "/images/AZ.png",
+        image: "/images/AZ.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/AZ.png" },
             { id: 2, name: "Grand Canyon", image: "/plates/AZ-grandcanyon.png" },
@@ -30,7 +30,7 @@ export const states = [
     {
         code: "AR",
         name: "Arkansas",
-        image: "/images/AR.png",
+        image: "/images/AR.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/AR.png" },
             { id: 2, name: "Diamond", image: "/plates/AR-diamond.png" },
@@ -39,7 +39,7 @@ export const states = [
     {
         code: "CA",
         name: "California",
-        image: "/images/CA.png",
+        image: "/images/CA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/CA.png" },
             { id: 2, name: "Legacy", image: "/plates/CA-legacy.png" },
@@ -49,7 +49,7 @@ export const states = [
     {
         code: "CO",
         name: "Colorado",
-        image: "/images/CO.png",
+        image: "/images/CO.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/CO.png" },
             { id: 2, name: "Mountains", image: "/plates/CO-mountains.png" },
@@ -58,7 +58,7 @@ export const states = [
     {
         code: "CT",
         name: "Connecticut",
-        image: "/images/CT.png",
+        image: "/images/CT.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/CT.png" },
             { id: 2, name: "Constitution State", image: "/plates/CT-constitution.png" },
@@ -67,7 +67,7 @@ export const states = [
     {
         code: "DE",
         name: "Delaware",
-        image: "/images/DE.png",
+        image: "/images/DE.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/DE.png" },
             { id: 2, name: "First State", image: "/plates/DE-firststate.png" },
@@ -76,7 +76,7 @@ export const states = [
     {
         code: "FL",
         name: "Florida",
-        image: "/images/FL.png",
+        image: "/images/FL.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/FL.png" },
             { id: 2, name: "Orange", image: "/plates/FL-orange.png" },
@@ -85,7 +85,7 @@ export const states = [
     {
         code: "GA",
         name: "Georgia",
-        image: "/images/GA.png",
+        image: "/images/GA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/GA.png" },
             { id: 2, name: "Peach State", image: "/plates/GA-peach.png" },
@@ -94,7 +94,7 @@ export const states = [
     {
         code: "HI",
         name: "Hawaii",
-        image: "/images/HI.png",
+        image: "/images/HI.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/HI.png" },
             { id: 2, name: "Rainbow", image: "/plates/HI-rainbow.png" },
@@ -103,7 +103,7 @@ export const states = [
     {
         code: "ID",
         name: "Idaho",
-        image: "/images/ID.png",
+        image: "/images/ID.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/ID.png" },
             { id: 2, name: "Famous Potatoes", image: "/plates/ID-potatoes.png" },
@@ -112,7 +112,7 @@ export const states = [
     {
         code: "IL",
         name: "Illinois",
-        image: "/images/IL.png",
+        image: "/images/IL.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/IL.png" },
             { id: 2, name: "Land of Lincoln", image: "/plates/IL-lincoln.png" },
@@ -121,7 +121,7 @@ export const states = [
     {
         code: "IN",
         name: "Indiana",
-        image: "/images/IN.png",
+        image: "/images/IN.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/IN.png" },
             { id: 2, name: "Crossroads of America", image: "/plates/IN-crossroads.png" },
@@ -130,7 +130,7 @@ export const states = [
     {
         code: "IA",
         name: "Iowa",
-        image: "/images/IA.png",
+        image: "/images/IA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/IA.png" },
             { id: 2, name: "County", image: "/plates/IA-county.png" },
@@ -139,7 +139,7 @@ export const states = [
     {
         code: "KS",
         name: "Kansas",
-        image: "/images/KS.png",
+        image: "/images/KS.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/KS.png" },
             { id: 2, name: "Sunflower State", image: "/plates/KS-sunflower.png" },
@@ -148,7 +148,7 @@ export const states = [
     {
         code: "KY",
         name: "Kentucky",
-        image: "/images/KY.png",
+        image: "/images/KY.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/KY.png" },
             { id: 2, name: "Bluegrass State", image: "/plates/KY-bluegrass.png" },
@@ -157,7 +157,7 @@ export const states = [
     {
         code: "LA",
         name: "Louisiana",
-        image: "/images/LA.png",
+        image: "/images/LA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/LA.png" },
             { id: 2, name: "Pelican", image: "/plates/LA-pelican.png" },
@@ -166,7 +166,7 @@ export const states = [
     {
         code: "ME",
         name: "Maine",
-        image: "/images/ME.png",
+        image: "/images/ME.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/ME.png" },
             { id: 2, name: "Lobster", image: "/plates/ME-lobster.png" },
@@ -175,7 +175,7 @@ export const states = [
     {
         code: "MD",
         name: "Maryland",
-        image: "/images/MD.png",
+        image: "/images/MD.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MD.png" },
             { id: 2, name: "Chesapeake Bay", image: "/plates/MD-chesapeake.png" },
@@ -184,7 +184,7 @@ export const states = [
     {
         code: "MA",
         name: "Massachusetts",
-        image: "/images/MA.png",
+        image: "/images/MA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MA.png" },
             { id: 2, name: "Spirit of America", image: "/plates/MA-spirit.png" },
@@ -193,7 +193,7 @@ export const states = [
     {
         code: "MI",
         name: "Michigan",
-        image: "/images/MI.png",
+        image: "/images/MI.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MI.png" },
             { id: 2, name: "Great Lakes", image: "/plates/MI-greatlakes.png" },
@@ -202,7 +202,7 @@ export const states = [
     {
         code: "MN",
         name: "Minnesota",
-        image: "/images/MN.png",
+        image: "/images/MN.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MN.png" },
             { id: 2, name: "10,000 Lakes", image: "/plates/MN-lakes.png" },
@@ -211,7 +211,7 @@ export const states = [
     {
         code: "MS",
         name: "Mississippi",
-        image: "/images/MS.png",
+        image: "/images/MS.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MS.png" },
             { id: 2, name: "Magnolia State", image: "/plates/MS-magnolia.png" },
@@ -220,7 +220,7 @@ export const states = [
     {
         code: "MO",
         name: "Missouri",
-        image: "/images/MO.png",
+        image: "/images/MO.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MO.png" },
             { id: 2, name: "Show-Me State", image: "/plates/MO-showme.png" },
@@ -229,7 +229,7 @@ export const states = [
     {
         code: "MT",
         name: "Montana",
-        image: "/images/MT.png",
+        image: "/images/MT.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/MT.png" },
             { id: 2, name: "Big Sky Country", image: "/plates/MT-bigsky.png" },
@@ -238,7 +238,7 @@ export const states = [
     {
         code: "NE",
         name: "Nebraska",
-        image: "/images/NE.png",
+        image: "/images/NE.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NE.png" },
             { id: 2, name: "Sandhills", image: "/plates/NE-sandhills.png" },
@@ -247,7 +247,7 @@ export const states = [
     {
         code: "NV",
         name: "Nevada",
-        image: "/images/NV.png",
+        image: "/images/NV.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NV.png" },
             { id: 2, name: "Lake Tahoe", image: "/plates/NV-tahoe.png" },
@@ -256,7 +256,7 @@ export const states = [
     {
         code: "NH",
         name: "New Hampshire",
-        image: "/images/NH.png",
+        image: "/images/NH.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NH.png" },
             { id: 2, name: "Old Man of the Mountain", image: "/plates/NH-oldman.png" },
@@ -265,7 +265,7 @@ export const states = [
     {
         code: "NJ",
         name: "New Jersey",
-        image: "/images/NJ.png",
+        image: "/images/NJ.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NJ.png" },
             { id: 2, name: "Garden State", image: "/plates/NJ-garden.png" },
@@ -274,7 +274,7 @@ export const states = [
     {
         code: "NM",
         name: "New Mexico",
-        image: "/images/NM.png",
+        image: "/images/NM.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NM.png" },
             { id: 2, name: "Chile", image: "/plates/NM-chile.png" },
@@ -283,7 +283,7 @@ export const states = [
     {
         code: "NY",
         name: "New York",
-        image: "/images/NY.png",
+        image: "/images/NY.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NY.png" },
             { id: 2, name: "Empire Gold", image: "/plates/NY-empire.png" },
@@ -292,7 +292,7 @@ export const states = [
     {
         code: "NC",
         name: "North Carolina",
-        image: "/images/NC.png",
+        image: "/images/NC.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/NC.png" },
             { id: 2, name: "First in Flight", image: "/plates/NC-flight.png" },
@@ -301,7 +301,7 @@ export const states = [
     {
         code: "ND",
         name: "North Dakota",
-        image: "/images/ND.png",
+        image: "/images/ND.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/ND.png" },
             { id: 2, name: "Peace Garden State", image: "/plates/ND-peacegarden.png" },
@@ -310,7 +310,7 @@ export const states = [
     {
         code: "OH",
         name: "Ohio",
-        image: "/images/OH.png",
+        image: "/images/OH.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/OH.png" },
             { id: 2, name: "Birthplace of Aviation", image: "/plates/OH-aviation.png" },
@@ -319,7 +319,7 @@ export const states = [
     {
         code: "OK",
         name: "Oklahoma",
-        image: "/images/OK.png",
+        image: "/images/OK.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/OK.png" },
             { id: 2, name: "Scissortail", image: "/plates/OK-scissortail.png" },
@@ -328,7 +328,7 @@ export const states = [
     {
         code: "OR",
         name: "Oregon",
-        image: "/images/OR.jpg",
+        image: "/images/OR.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/OR.jpg" },
             { id: 2, name: "Crater Lake", image: "/plates/OR-crater.png" },
@@ -337,7 +337,7 @@ export const states = [
     {
         code: "PA",
         name: "Pennsylvania",
-        image: "/images/PA.png",
+        image: "/images/PA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/PA.png" },
             { id: 2, name: "Keystone State", image: "/plates/PA-keystone.png" },
@@ -346,7 +346,7 @@ export const states = [
     {
         code: "RI",
         name: "Rhode Island",
-        image: "/images/RI.png",
+        image: "/images/RI.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/RI.png" },
             { id: 2, name: "Ocean State", image: "/plates/RI-ocean.png" },
@@ -355,7 +355,7 @@ export const states = [
     {
         code: "SC",
         name: "South Carolina",
-        image: "/images/SC.png",
+        image: "/images/SC.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/SC.png" },
             { id: 2, name: "Palmetto State", image: "/plates/SC-palmetto.png" },
@@ -364,7 +364,7 @@ export const states = [
     {
         code: "SD",
         name: "South Dakota",
-        image: "/images/SD.png",
+        image: "/images/SD.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/SD.png" },
             { id: 2, name: "Mount Rushmore", image: "/plates/SD-rushmore.png" },
@@ -373,7 +373,7 @@ export const states = [
     {
         code: "TN",
         name: "Tennessee",
-        image: "/images/TN.png",
+        image: "/images/TN.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/TN.png" },
             { id: 2, name: "Volunteer State", image: "/plates/TN-volunteer.png" },
@@ -382,7 +382,7 @@ export const states = [
     {
         code: "TX",
         name: "Texas",
-        image: "/images/TX.png",
+        image: "/images/TX.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/TX.png" },
             { id: 2, name: "Lone Star", image: "/plates/TX-lonestar.png" },
@@ -391,7 +391,7 @@ export const states = [
     {
         code: "UT",
         name: "Utah",
-        image: "/images/UT.png",
+        image: "/images/UT.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/UT.png" },
             { id: 2, name: "Arches", image: "/plates/UT-arches.png" },
@@ -400,7 +400,7 @@ export const states = [
     {
         code: "VT",
         name: "Vermont",
-        image: "/images/VT.png",
+        image: "/images/VT.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/VT.png" },
             { id: 2, name: "Green Mountain State", image: "/plates/VT-greenmountain.png" },
@@ -409,7 +409,7 @@ export const states = [
     {
         code: "VA",
         name: "Virginia",
-        image: "/images/VA.png",
+        image: "/images/VA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/VA.png" },
             { id: 2, name: "Virginia is for Lovers", image: "/plates/VA-lovers.png" },
@@ -418,7 +418,7 @@ export const states = [
     {
         code: "WA",
         name: "Washington",
-        image: "/images/WA.png",
+        image: "/images/WA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/WA.png" },
             { id: 2, name: "Mount Rainier", image: "/plates/WA-rainier.png" },
@@ -427,7 +427,7 @@ export const states = [
     {
         code: "WV",
         name: "West Virginia",
-        image: "/images/WV.png",
+        image: "/images/WV.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/WV.png" },
             { id: 2, name: "Mountain State", image: "/plates/WV-mountain.png" },
@@ -436,7 +436,7 @@ export const states = [
     {
         code: "WI",
         name: "Wisconsin",
-        image: "/images/WI.png",
+        image: "/images/WI.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/WI.png" },
             { id: 2, name: "America's Dairyland", image: "/plates/WI-dairyland.png" },
@@ -445,7 +445,7 @@ export const states = [
     {
         code: "WY",
         name: "Wyoming",
-        image: "/images/WY.png",
+        image: "/images/WY.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/WY.png" },
             { id: 2, name: "Buckin' Horse", image: "/plates/WY-buckin.png" },
