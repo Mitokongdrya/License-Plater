@@ -1,3 +1,20 @@
+// import PlateList from "@/components/plates/PlateList";
+
+// export default function PlatesPage() {
+//   return (
+//     <main className="p-6">
+//       <h1 className="text-4xl font-bold mb-6 text-center">
+//         License Plate Index
+//       </h1>
+//       <p className="text-center text-gray-600 mb-10">
+//         Check off each state as you spot their license plates!
+//       </p>
+//       <PlateList />
+//     </main>
+//   );
+// }
+
+//________________________________________________________________________________
 // // app/plates/[state]/page.tsx
 
 import Link from "next/link";
@@ -5,11 +22,12 @@ import { states } from "@/data/states";
 
 // Explicitly type the props inline
 type StatePageProps = {
-  params: { state: string };
+  params: Promise<{ state: string }>;
 };
 
-export default function StatePage({ params }: StatePageProps) {
-  const state = states.find((s) => s.code === params.state.toUpperCase());
+export default async function StatePage({ params }: StatePageProps) {
+  const { state: stateParam } = await params;
+  const state = states.find((s) => s.code === stateParam.toUpperCase());
 
   if (!state) return <p>State not found</p>;
 
@@ -43,7 +61,7 @@ export default function StatePage({ params }: StatePageProps) {
   );
 }
 
-
+//_______________________________________________________________________________
 
 // "use client";
 
