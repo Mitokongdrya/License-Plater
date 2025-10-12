@@ -37,13 +37,13 @@
 // app/plates/[state]/page.tsx
 import { states } from "@/data/states";
 import Image from "next/image";
+import type { PageProps } from "next"; 
 
-export default async function StatePage({
-  params,
-}: {
-  params: { state: string };
-}) {
-  const state = states.find((s) => s.code === params.state.toUpperCase());
+export default async function StatePage({ params }: PageProps) {
+  const resolvedParams = await params;
+  const stateParam = resolvedParams.state as string;
+
+  const state = states.find((s) => s.code === stateParam.toUpperCase());
 
   if (!state) {
     return <p>State not found</p>;
@@ -72,3 +72,4 @@ export default async function StatePage({
     </main>
   );
 }
+
