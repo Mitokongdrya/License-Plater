@@ -1,4 +1,3 @@
-// components/plates/PlateList.tsx
 "use client"; // because we’ll have interactivity (state toggles)
 
 import { useState } from "react";
@@ -6,7 +5,6 @@ import PlateCard from "./PlateCard";
 import { states } from "@/data/states";
 
 export default function PlateList() {
-  // Local state to track which plates are found
   const [foundStates, setFoundStates] = useState<{ [key: string]: boolean }>(
     {}
   );
