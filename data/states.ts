@@ -5,7 +5,7 @@ export const states = [
         name: "Alabama",
         image: "/images/AL.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/AL.png" },
+            { id: 1, name: "Standard", image: "/plates/AL.jpeg" },
             { id: 2, name: "Sweet Home Alabama", image: "/plates/AL-sweethome.png" },
         ],
     },
