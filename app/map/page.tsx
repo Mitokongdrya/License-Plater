@@ -1,3 +1,5 @@
+"use client";
+
 import ChoroplethMap from "../../components/map/ChoroplethMap";
 import Link from "next/link";
 
