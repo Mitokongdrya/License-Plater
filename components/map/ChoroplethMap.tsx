@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import { useCallback } from "react";
 
 // Example GeoJSON — you can load from a file or API
-import statesData from "../data/us-states.json";
+import statesData from "../../data/us-states.json";
 
 // Color scale function
 function getColor(d: number) {
