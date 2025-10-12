@@ -1,8 +1,9 @@
-"use client"; // only if you need state/hooks
+// // app/plates/[state]/page.tsx
 
 import Link from "next/link";
 import { states } from "@/data/states";
 
+// Explicitly type the props inline
 type StatePageProps = {
   params: { state: string };
 };
@@ -14,6 +15,7 @@ export default function StatePage({ params }: StatePageProps) {
 
   return (
     <main className="p-6">
+      {/* Back button */}
       <Link href="/plates">
         <button className="mb-4 px-4 py-2 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-md font-medium">
           ← Back to Grid
@@ -26,22 +28,21 @@ export default function StatePage({ params }: StatePageProps) {
         {state.plates.map((plate) => (
           <div
             key={plate.id}
-            className="border rounded-xl p-4 flex flex-col items-center bg-white shadow-sm hover:shadow-md transition"
+            className="border rounded-xl p-4 flex flex-col items-center bg-gray-50 shadow-sm hover:shadow-md transition"
           >
             <img
               src={plate.image}
               alt={plate.name}
               className="mb-2 object-contain"
             />
-            <p className="font-medium text-gray-900 text-center">
-              {plate.name}
-            </p>
+            <p className="font-medium text-gray-900 text-center">{plate.name}</p>
           </div>
         ))}
       </div>
     </main>
   );
 }
+
 
 
 // "use client";
