@@ -23,8 +23,12 @@ export const states = [
         name: "Arizona",
         image: "/images/AZ.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/AZ.png" },
-            { id: 2, name: "Grand Canyon", image: "/plates/AZ-grandcanyon.png" },
+            { id: 1, name: "Standard", image: "/plates/AZ/AZ.jpg" },
+            { id: 2, name: "Arizona Education", image: "/plates/AZ/AZ-Arizona Education.jpg" },
+            { id: 3, name: "Arizona Highways", image: "/plates/AZ/AZ-Arizona Highway.jpg" },
+            { id: 4, name: "Cardinals", image: "/plates/AZ/AZ-Cardinals.jpg" },
+            { id: 5, name: "First Responders", image: "/plates/AZ/AZ-First Responders.jpg" },
+            { id: 6, name: "Route 66", image: "/plates/AZ/AZ-Route 66.jpg" },
         ],
     },
     {
@@ -41,9 +45,8 @@ export const states = [
         name: "California",
         image: "/images/CA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/CA.png" },
-            { id: 2, name: "Legacy", image: "/plates/CA-legacy.png" },
-            { id: 3, name: "Yosemite", image: "/plates/CA-yosemite.png" },
+            { id: 1, name: "Standard", image: "/plates/CA/CA.jpg" },
+            { id: 2, name: "Legacy", image: "/plates/CA/CA-legacy.jpg" },
         ],
     },
     {
@@ -96,8 +99,10 @@ export const states = [
         name: "Hawaii",
         image: "/images/HI.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/HI.png" },
-            { id: 2, name: "Rainbow", image: "/plates/HI-rainbow.png" },
+            { id: 1, name: "Standard", image: "/plates/HI/HI.jpg" },
+            { id: 2, name: "Haleakalā", image: "/plates/HI/HI-Haleakala.jpg" },
+            { id: 3, name: "Hawaii Volcanoes", image: "/plates/HI/HI-Hawaii Volcanoes.jpg" },
+            { id: 4, name: "Polynesian", image: "/plates/HI/HI-Polynesian.jpeg" },
         ],
     },
     {
@@ -105,8 +110,12 @@ export const states = [
         name: "Idaho",
         image: "/images/ID.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/ID.png" },
-            { id: 2, name: "Famous Potatoes", image: "/plates/ID-potatoes.png" },
+            { id: 1, name: "Standard", image: "/plates/ID/ID.jpeg" },
+            { id: 2, name: "Capital Restoration", image: "/plates/ID/ID-Capital Restoration.jpg" },
+            { id: 3, name: "Famous Potatoes", image: "/plates/ID/ID-Famous Potatoes.jpg" },
+            { id: 4, name: "Wildlife (Bluebird)", image: "/plates/ID/ID-Wildlife (Bluebird).jpg" },
+            { id: 5, name: "Wildlife (Elk)", image: "/plates/ID/ID-Wildlife (Elk).jpg" },
+            { id: 6, name: "Wildlife (Trout)", image: "/plates/ID/ID-Wildlife (Trout).jpg" },
         ],
     },
     {
@@ -231,8 +240,13 @@ export const states = [
         name: "Montana",
         image: "/images/MT.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MT.png" },
-            { id: 2, name: "Big Sky Country", image: "/plates/MT-bigsky.png" },
+            { id: 1, name: "Standard", image: "/plates/MT/MT.jpg" },
+            { id: 2, name: "Standard (2006)", image: "/plates/MT/MT-2006.jpg" },
+            { id: 3, name: "Standard (2000)", image: "/plates/MT/MT-2000.jpg" },
+            { id: 4, name: "Standard (1991)", image: "/plates/MT/MT-1991.jpg" },
+            { id: 5, name: "Standard (1989)", image: "/plates/MT/MT-1989.jpg" },
+            { id: 6, name: "Bird of Pray Foundation", image: "/plates/MT/MT-Bird of Pray.jpg" },
+            { id: 7, name: "Sweet Grass Community Foundation", image: "/plates/MT/MT-Sweet Grass Community.jpg" },
         ],
     },
     {
@@ -249,8 +263,12 @@ export const states = [
         name: "Nevada",
         image: "/images/NV.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NV.png" },
-            { id: 2, name: "Lake Tahoe", image: "/plates/NV-tahoe.png" },
+            { id: 1, name: "Standard", image: "/plates/NV/NV.jpg" },
+            { id: 2, name: "1982 Replica", image: "/plates/NV/NV-1982 Replica.jpg" },
+            { id: 3, name: "Golden Knights", image: "/plates/NV/NV-Golden Knights.jpg" },
+            { id: 4, name: "Lake Tahoe", image: "/plates/NV/NV-Lake Tahoe.jpg" },
+            { id: 5, name: "Las Vegas", image: "/plates/NV/NV-Las Vegas Commemorative.jpg" },
+            { id: 6, name: "United We Stand", image: "/plates/NV/NV-United We Stand.jpg" },
         ],
     },
     {
@@ -276,8 +294,9 @@ export const states = [
         name: "New Mexico",
         image: "/images/NM.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NM.png" },
-            { id: 2, name: "Chile", image: "/plates/NM-chile.png" },
+            { id: 1, name: "Standard Turquoise", image: "/plates/NM/NM-Turquoise.jpg" },
+            { id: 2, name: "Standard Yellow", image: "/plates/NM/NM-Red and Yellow.jpg" },
+            { id: 3, name: "Chiles", image: "/plates/NM/NM-Chiles.jpg" },
         ],
     },
     {
@@ -330,8 +349,23 @@ export const states = [
         name: "Oregon",
         image: "/images/OR.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/OR.jpg" },
-            { id: 2, name: "Crater Lake", image: "/plates/OR-crater.png" },
+            { id: 1, name: "Standard", image: "/plates/OR/OR.jpg" },
+            { id: 2, name: "Coastal Playground", image: "/plates/OR/OR-Coastal Playground.jpg" },
+            { id: 3, name: "Crater Lake", image: "/plates/OR/OR-Crater Lake.jpg" },
+            { id: 4, name: "Cultural Trust", image: "/plates/OR/OR-Cultural Trust.jpg" },
+            { id: 5, name: "Cultural Trust (Old)", image: "/plates/OR/OR-Cultural Trust (Old).jpg" },
+            { id: 6, name: "OR Trail", image: "/plates/OR/OR-OR Trail.jpg" },
+            { id: 7, name: "OSU", image: "/plates/OR/OR-OSU.jpg" },
+            { id: 8, name: "Pacific Wonderland", image: "/plates/OR/OR-Pacific Wonderland.jpg" },
+            { id: 9, name: "Pollinator Paradise", image: "/plates/OR/OR-Pollinator Paradise.jpg" },
+            { id: 10, name: "Salmon", image: "/plates/OR/OR-Salmon.jpg" },
+            { id: 11, name: "Salmon (Old)", image: "/plates/OR/OR-Salmon (Old).jpg" },
+            { id: 12, name: "Share the Road", image: "/plates/OR/OR-Share the Road.jpg" },
+            { id: 13, name: "Smokey Bear", image: "/plates/OR/OR-Smokey Bear.jpg" },
+            { id: 14, name: "Trailblazers", image: "/plates/OR/OR-Trailblazers.jpg" },
+            { id: 15, name: "UO", image: "/plates/OR/OR-UO.jpg" },
+            { id: 16, name: "Watch for Wildlife", image: "/plates/OR/OR-Watch for Wildlife.jpg" },
+            { id: 17, name: "Wine Country", image: "/plates/OR/OR-Wine Country.jpg" }
         ],
     },
     {
@@ -384,8 +418,9 @@ export const states = [
         name: "Texas",
         image: "/images/TX.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/TX.png" },
-            { id: 2, name: "Lone Star", image: "/plates/TX-lonestar.png" },
+            { id: 1, name: "Standard", image: "/plates/TX/TX.jpg" },
+            { id: 2, name: "Standard (2009-2012)", image: "/plates/TX/TX-Lone Star.jpg" },
+            { id: 3, name: "Standard (2000-2009)", image: "/plates/TX/TX-Panoramic.jpg" },
         ],
     },
     {
@@ -393,8 +428,9 @@ export const states = [
         name: "Utah",
         image: "/images/UT.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/UT.png" },
-            { id: 2, name: "Arches", image: "/plates/UT-arches.png" },
+            { id: 1, name: "In God We Trust", image: "/plates/UT/UT-In God We Trust.jpg" },
+            { id: 2, name: "Arches", image: "/plates/UT/UT-Life Elevated Arches.jpg" },
+            { id: 3, name: "Skier", image: "/plates/UT/UT-Life Elevated Skier.jpg" },
         ],
     },
     {
@@ -420,8 +456,18 @@ export const states = [
         name: "Washington",
         image: "/images/WA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/WA.png" },
-            { id: 2, name: "Mount Rainier", image: "/plates/WA-rainier.png" },
+            { id: 1, name: "Standard", image: "/plates/WA/WA.jpg" },
+            { id: 2, name: "Endangered Wildlife (Orca)", image: "/plates/WA/WA-Endangered Wildlife (Orca).jpg" },
+            { id: 3, name: "National Parks", image: "/plates/WA/WA-National Parks.jpg" },
+            { id: 4, name: "Wildlife (Eagle)", image: "/plates/WA/WA-Wildlife (Eagle).jpg" },
+            { id: 5, name: "Wildlife (Elk)", image: "/plates/WA/WA-Wildlife (Elk).jpg" },
+            { id: 6, name: "Kraken", image: "/plates/WA/WA-Kraken.jpg" },
+            { id: 7, name: "Mariners", image: "/plates/WA/WA-Mariners.jpg" },
+            { id: 8, name: "Sounders", image: "/plates/WA/WA-Sounders.jpg" },
+            { id: 9, name: "Storm", image: "/plates/WA/WA-Storm.jpg" },
+            { id: 10, name: "WSU", image: "/plates/WA/WA-WSU.jpg" },
+            { id: 11, name: "UW", image: "/plates/WA/WA-UW.jpg" },
+            { id: 12, name: "CWU", image: "/plates/WA/WA-CWU.jpg" },
         ],
     },
     {
@@ -452,13 +498,3 @@ export const states = [
         ],
     },
 ];
-
-
-// // data/states.ts
-// export const states = [
-//   { code: "CA", name: "California", image: "/plates/CA.png" },
-//   { code: "OR", name: "Oregon", image: "/plates/OR.png" },
-//   { code: "TX", name: "Texas", image: "/plates/TX.png" },
-//   { code: "WA", name: "Washington", image: "/plates/WA.png" },
-//   // ... add the rest
-// ];
