@@ -81,8 +81,16 @@ export const states = [
         name: "Florida",
         image: "/images/FL.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/FL.png" },
-            { id: 2, name: "Orange", image: "/plates/FL-orange.png" },
+            { id: 1, name: "Standard", image: "/plates/FL/FL.jpg" },
+            { id: 2, name: "Endless Summer", image: "/plates/FL/FL-Endless Summer.jpg" },
+            { id: 3, name: "Everglades", image: "/plates/FL/FL-Everglade.jpg" },
+            { id: 4, name: "Sea Turtles", image: "/plates/FL/FL-Helping Sea Turtles Survive.jpg" },
+            { id: 5, name: "Wild Dolphins", image: "/plates/FL/FL-Protect Wild Dolphins.jpg" },
+            { id: 6, name: "Manatees", image: "/plates/FL/FL-Save the Manatee.jpg" },
+            { id: 7, name: "Heat", image: "/plates/FL/FL-Heat.jpg" },
+            { id: 8, name: "Walt Disney World", image: "/plates/FL/FL-Walt Disney World.jpg" },
+            { id: 9, name: "UF", image: "/plates/FL/FL-UF.jpg" },
+            { id: 10, name: "FSU", image: "/plates/FL/FL-FSU.jpg" },
         ],
     },
     {
@@ -123,8 +131,13 @@ export const states = [
         name: "Illinois",
         image: "/images/IL.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/IL.png" },
-            { id: 2, name: "Land of Lincoln", image: "/plates/IL-lincoln.png" },
+            { id: 1, name: "Standard", image: "/plates/IL/IL.jpg" },
+            { id: 2, name: "Environmental", image: "/plates/IL/IL-Environmental.jpg" },
+            { id: 3, name: "White Sox", image: "/plates/IL/IL-White Sox.jpg" },
+            { id: 4, name: "Cubs", image: "/plates/IL/IL-Cubs.jpg" },
+            { id: 5, name: "Blackhawks", image: "/plates/IL/IL-Blackhawks.jpg" },
+            { id: 6, name: "Bears", image: "/plates/IL/IL-Bears.jpg" },
+            { id: 7, name: "Bulls", image: "/plates/IL/IL-Bulls.jpg" },
         ],
     },
     {
@@ -132,8 +145,12 @@ export const states = [
         name: "Indiana",
         image: "/images/IN.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/IN.png" },
-            { id: 2, name: "Crossroads of America", image: "/plates/IN-crossroads.png" },
+            { id: 1, name: "Standard", image: "/plates/IN/IN.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/IN/IN-Blackout.jpg" },
+            { id: 3, name: "Environmental", image: "/plates/IN/IN-Environmental.jpg" },
+            { id: 4, name: "Colts", image: "/plates/IN/IN-Colts.jpg" },
+            { id: 5, name: "UI", image: "/plates/IN/IN-UI.jpg" },
+            { id: 6, name: "Purdue", image: "/plates/IN/IN-Purdue.jpg" },
         ],
     },
     {
@@ -141,8 +158,10 @@ export const states = [
         name: "Iowa",
         image: "/images/IA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/IA.png" },
-            { id: 2, name: "County", image: "/plates/IA-county.png" },
+            { id: 1, name: "Standard", image: "/plates/IA/IA.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/IA/IA-Blackout.jpg" },
+            { id: 3, name: "UI", image: "/plates/IA/IA-UI.jpg" },
+            { id: 4, name: "ISU", image: "/plates/IA/IA-ISU.jpg" },
         ],
     },
     {
@@ -186,8 +205,8 @@ export const states = [
         name: "Maryland",
         image: "/images/MD.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MD.png" },
-            { id: 2, name: "Chesapeake Bay", image: "/plates/MD-chesapeake.png" },
+            { id: 1, name: "Standard", image: "/plates/MD/MD.jpg" },
+            { id: 2, name: "Chesapeake Bay", image: "/plates/MD/MD-Chesapeake Bay.jpg" },
         ],
     },
     {
@@ -195,8 +214,13 @@ export const states = [
         name: "Massachusetts",
         image: "/images/MA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MA.png" },
-            { id: 2, name: "Spirit of America", image: "/plates/MA-spirit.png" },
+            { id: 1, name: "Standard", image: "/plates/MA/MA.jpg" },
+            { id: 2, name: "Cape Cod", image: "/plates/MA/MA-Cape Cod & Islands.jpg" },
+            { id: 3, name: "Right Whale", image: "/plates/MA/MA-Right Whale.jpg" },
+            { id: 4, name: "United We Stand", image: "/plates/MA/MA-United We Stand.jpg" },
+            { id: 5, name: "Red Sox", image: "/plates/MA/MA-Red Sox.jpg" },
+            { id: 6, name: "Patriots", image: "/plates/MA/MA-Patriots.jpg" },
+
         ],
     },
     {
@@ -204,8 +228,10 @@ export const states = [
         name: "Michigan",
         image: "/images/MI.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MI.png" },
-            { id: 2, name: "Great Lakes", image: "/plates/MI-greatlakes.png" },
+            { id: 1, name: "Standard", image: "/plates/MI/MI.jpg" },
+            { id: 2, name: "Mackinac Bridge", image: "/plates/MI/MI-Mackinac Bridge.jpg" },
+            { id: 3, name: "Water Winter Wonderland", image: "/plates/MI/MI-Water Winter Wonderland.jpg" },
+            { id: 4, name: "Spectacular Peninsulas", image: "/plates/MI/MI-Spectacular Peninsulas.jpg" },
         ],
     },
     {
@@ -213,8 +239,8 @@ export const states = [
         name: "Minnesota",
         image: "/images/MN.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MN.png" },
-            { id: 2, name: "10,000 Lakes", image: "/plates/MN-lakes.png" },
+            { id: 1, name: "Standard", image: "/plates/MN/MN.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/MN/MN-Blackout.jpg" },
         ],
     },
     {
@@ -231,8 +257,7 @@ export const states = [
         name: "Missouri",
         image: "/images/MO.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MO.png" },
-            { id: 2, name: "Show-Me State", image: "/plates/MO-showme.png" },
+            { id: 1, name: "Standard", image: "/plates/MO/MO.jpg" },
         ],
     },
     {
@@ -285,8 +310,11 @@ export const states = [
         name: "New Jersey",
         image: "/images/NJ.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NJ.png" },
-            { id: 2, name: "Garden State", image: "/plates/NJ-garden.png" },
+            { id: 1, name: "Standard", image: "/plates/NJ/NJ.jpg" },
+            { id: 2, name: "Shore to Please", image: "/plates/NJ/NJ-Shore to Please.jpg" },
+            { id: 3, name: "Conquer Cancer", image: "/plates/NJ/NJ-Conquer Cancer.jpg" },
+            { id: 4, name: "USS New Jersey", image: "/plates/NJ/NJ-USS New Jersey.jpg" },
+            { id: 5, name: "Animal Friendly", image: "/plates/NJ/NJ-Animal Friendly.jpg" },
         ],
     },
     {
@@ -391,8 +419,8 @@ export const states = [
         name: "South Carolina",
         image: "/images/SC.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/SC.png" },
-            { id: 2, name: "Palmetto State", image: "/plates/SC-palmetto.png" },
+            { id: 1, name: "Standard (2016)", image: "/plates/SC/SC-2016.jpg" },
+            { id: 2, name: "Standard (2008)", image: "/plates/SC/SC-2008.jpg" },
         ],
     },
     {
@@ -409,8 +437,12 @@ export const states = [
         name: "Tennessee",
         image: "/images/TN.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/TN.png" },
-            { id: 2, name: "Volunteer State", image: "/plates/TN-volunteer.png" },
+            { id: 1, name: "Standard", image: "/plates/TN/TN.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/TN/TN-Blackout.jpg" },
+            { id: 3, name: "Sycamore Shoals", image: "/plates/TN/TN-Sycamore Shoals.jpg" },
+            { id: 4, name: "Dollywood", image: "/plates/TN/TN-Dollywood.jpg" },
+            { id: 5, name: "Smoky Mountains", image: "/plates/TN/TN-Smokies.jpg" },
+            { id: 6, name: "American Eagle", image: "/plates/TN/TN-American Eagle Foundation.jpg" },
         ],
     },
     {
@@ -447,8 +479,8 @@ export const states = [
         name: "Virginia",
         image: "/images/VA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/VA.png" },
-            { id: 2, name: "Virginia is for Lovers", image: "/plates/VA-lovers.png" },
+            { id: 1, name: "Standard", image: "/plates/VA/VA.jpg" },
+            { id: 2, name: "Pollinator", image: "/plates/VA/VA-Pollinators.jpg" },
         ],
     },
     {
