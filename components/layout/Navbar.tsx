@@ -1,25 +1,10 @@
-// // components/layout/Navbar.tsx
-// "use client";
-// import Link from "next/link";
-
-// export default function Navbar() {
-//   return (
-//     <nav className="flex gap-4 p-4 bg-gray-100 shadow">
-//       <Link href="/">Home</Link>
-//       <Link href="/map">Map</Link>
-//       <Link href="/plates">Plates</Link>
-//     </nav>
-//   );
-// }
-
-
 "use client";
 
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-blue-600 text-white shadow-md">
+    <nav className="flex items-center justify-between px-6 py-4 bg-purple-900 text-white shadow-md">
       <h1 className="text-xl font-bold tracking-wide">Plate Finder</h1>
 
       <div className="flex gap-6">
