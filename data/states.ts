@@ -52,7 +52,7 @@ export const states = [
         image: "/images/CA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/CA/CA.jpg" },
-            { id: 2, name: "Legacy", image: "/plates/CA/CA-legacy.jpg" },
+            { id: 2, name: "Legacy", image: "/plates/CA/CA-Legacy.jpg" },
         ],
     },
     {
