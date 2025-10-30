@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-purple-900 text-white shadow-md">
+    <nav className="flex items-center justify-between px-6 py-4 navbar text-white shadow-md">
       <h1 className="text-xl font-bold tracking-wide">Plate Finder</h1>
 
       <div className="flex gap-6">

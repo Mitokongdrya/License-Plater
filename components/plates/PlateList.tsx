@@ -1,4 +1,4 @@
-"use client"; // because we’ll have interactivity (state toggles)
+"use client";
 
 import { useState } from "react";
 import PlateCard from "./PlateCard";

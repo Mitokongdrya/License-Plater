@@ -35,7 +35,7 @@ export default async function StatePage({ params }: StatePageProps) {
     <main className="p-6">
       {/* Back button */}
       <Link href="/plates">
-        <button className="mb-4 px-4 py-2 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-md font-medium">
+        <button className="mb-4 px-4 py-2 card text-gray-800 hover:bg-gray-300 rounded-md font-medium">
           ← Back to Grid
         </button>
       </Link>
@@ -46,7 +46,7 @@ export default async function StatePage({ params }: StatePageProps) {
         {state.plates.map((plate) => (
           <div
             key={plate.id}
-            className="border rounded-xl p-4 flex flex-col items-center bg-gray-50 shadow-sm hover:shadow-md transition"
+            className="border rounded-xl p-4 flex flex-col items-center card shadow-sm hover:shadow-md transition"
           >
             <img
               src={plate.image}

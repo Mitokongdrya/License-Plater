@@ -4,6 +4,83 @@
 @tailwind utilities; */
 
 
+/* =========================================
+   Theme Colors
+   ========================================= */
+:root {
+  /* Brand / Accent */
+  --color-primary: #ff7e4f;       /* Orange accent */
+
+  /* Backgrounds */
+  --color-bg: #1b3022;            /* Deep green background */
+  --color-bg-elevated: #14241b;   /* Dark forest navbar */
+  --color-card: #f8f3e7;          /* Warm ivory card */
+  --color-sage: #e8efe7;          /* Sage tint for subtle surfaces */
+
+  /* Text */
+  --color-text: #f3f3f3;          /* Text on dark */
+  --color-text-dark: #1b3022;     /* Text on light surfaces */
+  --color-text-muted: #cfd6cf;
+
+  /* Border */
+  --color-border: rgba(255,255,255,0.08); 
+
+  /* States */
+  --color-found: #f3c969;
+  --color-warning: #ffce65;
+  --color-error: #ff6b6b;
+}
+
+/* Optional — Light mode override if needed later */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f8f3e7;
+    --color-bg-elevated: #ffffff;
+    --color-text: #1b3022;
+    --color-border: rgba(0,0,0,0.12);
+  }
+}
+
+/* =========================================
+   Base Layout
+   ========================================= */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+}
+
+/* .card {
+  background: var(--color-card);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+} */
+
+.card {
+  background: var(--color-card);          /* #f8f3e7 */
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border);
+}
+
+.card-found {
+  background: var(--color-found);          /* #e8efe7 — subtle success look */
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease;
+}
+
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -27,4 +104,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
