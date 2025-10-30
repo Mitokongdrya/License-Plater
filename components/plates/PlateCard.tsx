@@ -23,21 +23,25 @@ export default function PlateCard({ state, found, onToggle }: PlateCardProps) {
         ${found ? "bg-green-500" : "bg-white"}`}
     >
       {/* Card content */}
-      <Link href={`/plates/${state.code}`} className="flex flex-col items-center w-full">
+      <Link
+        href={`/plates/${state.code}`}
+        className="flex items-center justify-center w-full flex-1"
+      >
         <Image
           src={state.image}
           alt={`${state.name} outline`}
           width={160}
           height={80}
-          className="mb-3 object-contain"
+          className="object-contain mx-auto block"
         />
-        <h2
-          className={`font-semibold text-lg text-center transition-colors duration-200
-            ${found ? "text-white" : "text-gray-800"}`}
-        >
-          {state.name}
-        </h2>
       </Link>
+
+      <h2
+        className={`font-semibold text-lg text-center transition-colors duration-200 mt-auto w-full
+          ${found ? "text-white" : "text-gray-800"}`}
+      >
+        {state.name}
+      </h2>
 
       {/* Checkbox in bottom-right */}
       <div className="absolute bottom-3 right-3 flex items-center">
