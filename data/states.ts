@@ -5,8 +5,14 @@ export const states = [
         name: "Alabama",
         image: "/images/AL.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/AL.jpeg" },
-            { id: 2, name: "Sweet Home Alabama", image: "/plates/AL-sweethome.png" },
+            { id: 1, name: "Standard", image: "/plates/AL/AL.jpg" },
+            { id: 2, name: "God Bless America", image: "/plates/AL/AL-God Bless America.jpg" },
+            { id: 3, name: "Wildlife", image: "/plates/AL/AL-Wildlife.jpg" },
+            { id: 4, name: "Barber Motorsports Museum", image: "/plates/AL/AL-Barber Motorsports Museum.jpg" },
+            { id: 5, name: "Helping Schools", image: "/plates/AL/AL-Helping Schools.jpg" },
+            { id: 6, name: "Bicentennial", image: "/plates/AL/AL-Bicentennial.jpg" },
+            { id: 7, name: "Bama", image: "/plates/AL/AL-Bama.jpg" },
+            { id: 8, name: "Auburn", image: "/plates/AL/AL-Auburn.jpg" },
         ],
     },
     {
@@ -14,8 +20,9 @@ export const states = [
         name: "Alaska",
         image: "/images/AK.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/AK.png" },
-            { id: 2, name: "Bear", image: "/plates/AK-bear.png" },
+            { id: 1, name: "Standard", image: "/plates/AK/AK.jpg" },
+            { id: 2, name: "Bear", image: "/plates/AK/AK-Bear.jpg" },
+            { id: 3, name: "Celebrating the Arts", image: "/plates/AK/AK-Celebrating the Arts.jpg" },
         ],
     },
     {
@@ -36,8 +43,7 @@ export const states = [
         name: "Arkansas",
         image: "/images/AR.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/AR.png" },
-            { id: 2, name: "Diamond", image: "/plates/AR-diamond.png" },
+            { id: 1, name: "Standard", image: "/plates/AR/AR.jpg" },
         ],
     },
     {
@@ -54,8 +60,14 @@ export const states = [
         name: "Colorado",
         image: "/images/CO.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/CO.png" },
-            { id: 2, name: "Mountains", image: "/plates/CO-mountains.png" },
+            { id: 1, name: "Standard", image: "/plates/CO/CO.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/CO/CO-Blackout.jpg" },
+            { id: 3, name: "Columbine", image: "/plates/CO/CO-Columbine.jpg" },
+            { id: 4, name: "Sesquicentennial", image: "/plates/CO/CO-Sesquicentennial.jpg" },
+            { id: 5, name: "BCA", image: "/plates/CO/CO-BCA.jpg" },
+            { id: 6, name: "Pioneer", image: "/plates/CO/CO-Pioneer.jpg" },
+            { id: 7, name: "Ski Country", image: "/plates/CO/CO-Ski Country.jpg" },
+            { id: 8, name: "Parks & Wildlife", image: "/plates/CO/CO-Parks & Wildlife.jpg" },
         ],
     },
     {
@@ -63,8 +75,7 @@ export const states = [
         name: "Connecticut",
         image: "/images/CT.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/CT.png" },
-            { id: 2, name: "Constitution State", image: "/plates/CT-constitution.png" },
+            { id: 1, name: "Standard", image: "/plates/CT/CT.jpg" },
         ],
     },
     {
@@ -72,8 +83,8 @@ export const states = [
         name: "Delaware",
         image: "/images/DE.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/DE.png" },
-            { id: 2, name: "First State", image: "/plates/DE-firststate.png" },
+            { id: 1, name: "Standard", image: "/plates/DE/DE.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/DE/DE-Blackout.jpg" },
         ],
     },
     {
@@ -98,8 +109,11 @@ export const states = [
         name: "Georgia",
         image: "/images/GA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/GA.png" },
-            { id: 2, name: "Peach State", image: "/plates/GA-peach.png" },
+            { id: 1, name: "Standard", image: "/plates/GA/GA-White.jpg" },
+            { id: 2, name: "Peach State", image: "/plates/GA/GA-Tree.jpg" },
+            { id: 3, name: "Bald Eagle", image: "/plates/GA/GA-Bald Eagle.jpg" },
+            { id: 4, name: "Bobwhite Quail", image: "/plates/GA/GA-Bobwhite Quail.jpg" },
+            { id: 5, name: "UGA", image: "/plates/GA/GA-UGA.jpg" },
         ],
     },
     {
@@ -169,8 +183,8 @@ export const states = [
         name: "Kansas",
         image: "/images/KS.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/KS.png" },
-            { id: 2, name: "Sunflower State", image: "/plates/KS-sunflower.png" },
+            { id: 1, name: "Standard", image: "/plates/KS/KS.jpg" },
+            { id: 2, name: "Standard (2007)", image: "/plates/KS/KS-2007.jpg" },
         ],
     },
     {
@@ -178,8 +192,8 @@ export const states = [
         name: "Kentucky",
         image: "/images/KY.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/KY.png" },
-            { id: 2, name: "Bluegrass State", image: "/plates/KY-bluegrass.png" },
+            { id: 1, name: "Standard", image: "/plates/KY/KY.jpg" },
+            { id: 2, name: "Unbridled Spirit", image: "/plates/KY/KY-Unbridled Spirit.jpg" },
         ],
     },
     {
@@ -187,8 +201,10 @@ export const states = [
         name: "Louisiana",
         image: "/images/LA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/LA.png" },
-            { id: 2, name: "Pelican", image: "/plates/LA-pelican.png" },
+            { id: 1, name: "Standard", image: "/plates/LA/LA.jpg" },
+            { id: 2, name: "Environmental Education", image: "/plates/LA/LA-Environmental Education.jpg" },
+            { id: 3, name: "Saints", image: "/plates/LA/LA-Saints.jpg" },
+            { id: 4, name: "LSU", image: "/plates/LA/LA-LSU.jpg" },
         ],
     },
     {
@@ -196,8 +212,11 @@ export const states = [
         name: "Maine",
         image: "/images/ME.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/ME.png" },
-            { id: 2, name: "Lobster", image: "/plates/ME-lobster.png" },
+            { id: 1, name: "Standard", image: "/plates/ME/ME.jpg" },
+            { id: 2, name: "Standard (1999-2025)", image: "/plates/ME/ME-1999.jpg" },
+            { id: 3, name: "Loon", image: "/plates/ME/ME-Loon.jpg" },
+            { id: 4, name: "Lobster", image: "/plates/ME/ME-Lobster.jpg" },
+            { id: 5, name: "Sportsman", image: "/plates/ME/ME-Sportsman.jpg" },
         ],
     },
     {
@@ -248,8 +267,10 @@ export const states = [
         name: "Mississippi",
         image: "/images/MS.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/MS.png" },
-            { id: 2, name: "Magnolia State", image: "/plates/MS-magnolia.png" },
+            { id: 1, name: "Standard", image: "/plates/MS/MS.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/MS/MS-Blackout.jpg" },
+            { id: 3, name: "Ole Miss", image: "/plates/MS/MS-Ole Miss.jpg" },
+            { id: 4, name: "Mississippi State", image: "/plates/MS/MS-MSU.jpg" },
         ],
     },
     {
@@ -279,8 +300,7 @@ export const states = [
         name: "Nebraska",
         image: "/images/NE.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NE.png" },
-            { id: 2, name: "Sandhills", image: "/plates/NE-sandhills.png" },
+            { id: 1, name: "Standard", image: "/plates/NE/NE.jpg" },
         ],
     },
     {
@@ -301,8 +321,8 @@ export const states = [
         name: "New Hampshire",
         image: "/images/NH.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NH.png" },
-            { id: 2, name: "Old Man of the Mountain", image: "/plates/NH-oldman.png" },
+            { id: 1, name: "Standard", image: "/plates/NH/NH.jpg" },
+            { id: 2, name: "Moose", image: "/plates/NH/NH-Moose.jpg" },
         ],
     },
     {
@@ -332,8 +352,9 @@ export const states = [
         name: "New York",
         image: "/images/NY.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NY.png" },
-            { id: 2, name: "Empire Gold", image: "/plates/NY-empire.png" },
+            { id: 1, name: "Standard", image: "/plates/NY/NY.jpg" },
+            { id: 2, name: "Empire Gold (2010)", image: "/plates/NY/NY-2010.jpg" },
+            { id: 3, name: "Standard (2001)", image: "/plates/NY/NY-2001.jpg" },
         ],
     },
     {
@@ -341,8 +362,10 @@ export const states = [
         name: "North Carolina",
         image: "/images/NC.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/NC.png" },
-            { id: 2, name: "First in Flight", image: "/plates/NC-flight.png" },
+            { id: 1, name: "Standard", image: "/plates/NC/NC.jpg" },
+            { id: 2, name: "First in Freedom", image: "/plates/NC/NC-First in Freedom.jpg" },
+            { id: 3, name: "In God We Trust", image: "/plates/NC/NC-In God We Trust.jpg" },
+            { id: 4, name: "Friends of the Smokies", image: "/plates/NC/NC-Friends of the Smokies.jpg" },
         ],
     },
     {
@@ -350,8 +373,8 @@ export const states = [
         name: "North Dakota",
         image: "/images/ND.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/ND.png" },
-            { id: 2, name: "Peace Garden State", image: "/plates/ND-peacegarden.png" },
+            { id: 1, name: "Standard", image: "/plates/ND/ND.jpg" },
+            { id: 2, name: "Blackout", image: "/plates/ND/ND-Blackout.jpg" },
         ],
     },
     {
@@ -359,8 +382,10 @@ export const states = [
         name: "Ohio",
         image: "/images/OH.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/OH.png" },
-            { id: 2, name: "Birthplace of Aviation", image: "/plates/OH-aviation.png" },
+            { id: 1, name: "Standard", image: "/plates/OH/OH.jpg" },
+            { id: 2, name: "Standard (2022)", image: "/plates/OH/OH-2022.jpg" },
+            { id: 3, name: "Standard (2009)", image: "/plates/OH/OH-2009.jpg" },
+            { id: 4, name: "Standard (2004)", image: "/plates/OH/OH-2004.jpg" },
         ],
     },
     {
@@ -368,8 +393,9 @@ export const states = [
         name: "Oklahoma",
         image: "/images/OK.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/OK.png" },
-            { id: 2, name: "Scissortail", image: "/plates/OK-scissortail.png" },
+            { id: 1, name: "Standard", image: "/plates/OK/OK.jpg" },
+            { id: 2, name: "Standard (2017)", image: "/plates/OK/OK-2017.jpg" },
+            { id: 3, name: "Standard (2009)", image: "/plates/OK/OK-2009.jpg" },
         ],
     },
     {
@@ -401,8 +427,8 @@ export const states = [
         name: "Pennsylvania",
         image: "/images/PA.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/PA.png" },
-            { id: 2, name: "Keystone State", image: "/plates/PA-keystone.png" },
+            { id: 1, name: "Standard", image: "/plates/PA/PA.jpg" },
+            { id: 2, name: "Standard (2006-2025)", image: "/plates/PA/PA-2006.jpg" },
         ],
     },
     {
@@ -410,8 +436,8 @@ export const states = [
         name: "Rhode Island",
         image: "/images/RI.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/RI.png" },
-            { id: 2, name: "Ocean State", image: "/plates/RI-ocean.png" },
+            { id: 1, name: "Standard", image: "/plates/RI/RI.jpg" },
+            { id: 2, name: "Atlantic Shark Institute", image: "/plates/RI/RI-Atlantic Shark Institute.jpg" },
         ],
     },
     {
@@ -428,8 +454,7 @@ export const states = [
         name: "South Dakota",
         image: "/images/SD.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/SD.png" },
-            { id: 2, name: "Mount Rushmore", image: "/plates/SD-rushmore.png" },
+            { id: 1, name: "Standard", image: "/plates/SD/SD.jpg" },
         ],
     },
     {
@@ -470,8 +495,7 @@ export const states = [
         name: "Vermont",
         image: "/images/VT.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/VT.png" },
-            { id: 2, name: "Green Mountain State", image: "/plates/VT-greenmountain.png" },
+            { id: 1, name: "Standard", image: "/plates/VT/VT.jpg" },
         ],
     },
     {
@@ -480,7 +504,8 @@ export const states = [
         image: "/images/VA.svg",
         plates: [
             { id: 1, name: "Standard", image: "/plates/VA/VA.jpg" },
-            { id: 2, name: "Pollinator", image: "/plates/VA/VA-Pollinators.jpg" },
+            { id: 2, name: "Blue Ridge Parkway", image: "/plates/VA/VA-Blue Ridge Parkway.jpg" },
+            { id: 3, name: "Pollinator", image: "/plates/VA/VA-Pollinators.jpg" },
         ],
     },
     {
@@ -507,8 +532,9 @@ export const states = [
         name: "West Virginia",
         image: "/images/WV.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/WV.png" },
-            { id: 2, name: "Mountain State", image: "/plates/WV-mountain.png" },
+            { id: 1, name: "Standard", image: "/plates/WV/WV.jpg" },
+            { id: 2, name: "Elk", image: "/plates/WV/WV-Elk.jpg" },
+            { id: 3, name: "Bluebird", image: "/plates/WV/WV-Bluebird.jpg" },
         ],
     },
     {
@@ -516,8 +542,8 @@ export const states = [
         name: "Wisconsin",
         image: "/images/WI.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/WI.png" },
-            { id: 2, name: "America's Dairyland", image: "/plates/WI-dairyland.png" },
+            { id: 1, name: "Standard", image: "/plates/WI/WI.jpg" },
+            { id: 2, name: "Road America", image: "/plates/WI/WI-Road America.jpg" },
         ],
     },
     {
@@ -525,8 +551,9 @@ export const states = [
         name: "Wyoming",
         image: "/images/WY.svg",
         plates: [
-            { id: 1, name: "Standard", image: "/plates/WY.png" },
-            { id: 2, name: "Buckin' Horse", image: "/plates/WY-buckin.png" },
+            { id: 1, name: "Standard", image: "/plates/WY/WY.jpg" },
+            { id: 2, name: "Standard (2016)", image: "/plates/WY/WY-2016.jpg" },
+            { id: 3, name: "Standard (2008)", image: "/plates/WY/WY-2008.jpg" },
         ],
     },
 ];
