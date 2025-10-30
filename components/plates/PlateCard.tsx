@@ -21,8 +21,6 @@ export default function PlateCard({ state, found, onToggle }: PlateCardProps) {
     <div
       className={`relative border rounded-xl p-4 flex flex-col items-center shadow-sm hover:shadow-md transition-colors duration-200
       card ${found ? "card-found" : ""}`}
-      // className={`relative border rounded-xl p-4 flex flex-col items-center shadow-sm hover:shadow-md transition-colors duration-200
-      //   ${found ? "bg-green-500" : "bg-white"}`}
     >
       {/* Card content */}
       <Link
