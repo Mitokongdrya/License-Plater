@@ -488,6 +488,7 @@ export const states = [
             { id: 1, name: "In God We Trust", image: "/plates/UT/UT-In God We Trust.jpg" },
             { id: 2, name: "Arches", image: "/plates/UT/UT-Life Elevated Arches.jpg" },
             { id: 3, name: "Skier", image: "/plates/UT/UT-Life Elevated Skier.jpg" },
+            { id: 4, name: "Blackout", image: "/plates/UT/UT-Blackout.jpg" },
         ],
     },
     {
