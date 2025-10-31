@@ -1,10 +1,8 @@
-"use client"; // for Next.js App Router
+"use client"; 
 
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useCallback } from "react";
-
-// Example GeoJSON — you can load from a file or API
 import statesData from "../../data/us-states.json";
 
 // Color scale function
@@ -32,7 +30,6 @@ function style(feature: any) {
 }
 
 export default function ChoroplethMap() {
-  // You can use useCallback so React-Leaflet doesn’t recreate handler every render
   const onEachFeature = useCallback((feature: any, layer: any) => {
     if (feature.properties && feature.properties.name) {
       layer.bindPopup(
