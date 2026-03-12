@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./global.css";
-import Navbar from "../components/layout/Navbar";
+import Providers from "@/components/layout/Providers";
 
 
 export default function RootLayout({
@@ -12,8 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-gray-50 text-gray-900">
-        <Navbar />
-        <main className="p-6">{children}</main>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
