@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ------------- User -------------
+model User {
+  id        String     @id          
+  progress  Progress[]
+  createdAt DateTime   @default(now())
+}
+
+// ------------- State -------------
+model State {
+  id    Int @id @default(autoincrement())
+  code  String @unique
+  name   String
+  image  String?
+  plates Plate[]
+}
+
+// ------------- Plate -------------
+model Plate {
+  id       Int     @id @default(autoincrement())
+  name     String
+  image    String?
+  stateId  Int
+  state    State   @relation(fields: [stateId], references: [id])
+  progress Progress[]
+}
+
+
+// ------------- Progress (User discovers a Plate) -------------
+model Progress {
+  id        String    @id @default(cuid())
+  userId    String
+  plateId   Int
+  foundAt   DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id])
+  plate     Plate     @relation(fields: [plateId], references: [id])
+
+  @@unique([userId, plateId])  // one progress row per plate
+  @@index([userId])
+  @@index([plateId])
+}
