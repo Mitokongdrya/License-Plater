@@ -2,11 +2,11 @@
 
 import dynamic from "next/dynamic";
 
-const DynamicMap = dynamic(() => import("./ChoroplethMap"), {
-  ssr: false,
-  loading: () => <p>Loading map…</p>
-});
+export default function ChoroplethMapWrapper(props: any) {
+  const DynamicMap = dynamic(() => import("./ChoroplethMap"), {
+    ssr: false,
+    loading: () => <p>Loading map…</p>
+  });
 
-export default function ChoroplethMapWrapper() {
-  return <DynamicMap />;
-}
+  return <DynamicMap {...props} />;
+};
