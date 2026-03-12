@@ -1,6 +1,10 @@
-import { defineConfig, env } from "prisma/config";
+import { defineConfig } from "prisma/config";
 import { config } from "dotenv";
+
+// Load .env.local for local development; on Vercel, env vars are
+// injected automatically so the file won't exist (and that's fine).
 config({ path: ".env.local" });
+
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
@@ -8,6 +12,6 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: env("DATABASE_URL"),
+    url: process.env.DATABASE_URL!,
   },
 });
