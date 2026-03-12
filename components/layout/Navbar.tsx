@@ -3,13 +3,17 @@
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { useAppDispatch } from "@/store/hooks";
+import { clearProgress } from "@/store/progressSlice";
 
 export default function Navbar() {
   const { user, loading, signOut } = useAuth();
   const router = useRouter();
+  const dispatch = useAppDispatch();
 
   const handleSignOut = async () => {
     await signOut();
+    dispatch(clearProgress());
     router.push("/");
   };
 
