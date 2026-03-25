@@ -1,17 +1,18 @@
 "use client";
 
 import { useEffect, useCallback } from "react";
-import PlateCard from "./PlateCard";
+import PlateCard from "./PlateCard"; // Importing PlateCard
 import { states as allStates } from "@/data/states";
 import { useAuth } from "@/context/AuthContext";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { fetchProgress, toggleProgress } from "@/store/progressSlice";
+
+import { fetchProgress, togglePlateProgress } from "@/store/progressSlice";
 
 type PlateState = {
   code: string;
   name: string;
   image: string;
-  plates?: { image: string }[];
+  plates: { id: number; name: string; image: string }[];
 };
 
 type PlateListProps = {
@@ -20,31 +21,18 @@ type PlateListProps = {
 
 export default function PlateList({ data }: PlateListProps) {
   const displayStates = data && data.length > 0 ? data : allStates;
-  const { session } = useAuth();
   const dispatch = useAppDispatch();
-
-  const foundStates = useAppSelector((s) => s.progress.foundStates);
+  const foundPlates = useAppSelector((s) => s.progress.foundPlates);
   const loading = useAppSelector((s) => s.progress.loading);
+  const { session } = useAuth();
 
-  // Fetch user's progress from the database on mount / login
-  useEffect(() => {
+  // Handler to toggle a plate by id
+  // Use composite key for each plate: `${state.code}-${plate.id}`
+  const handleTogglePlate = (plateId: string) => {
     if (!session?.access_token) return;
-    dispatch(fetchProgress(session.access_token));
-  }, [session?.access_token, dispatch]);
-
-  const toggleFound = useCallback(
-    (code: string) => {
-      if (!session?.access_token) return;
-      dispatch(
-        toggleProgress({
-          code,
-          wasFound: !!foundStates[code],
-          accessToken: session.access_token,
-        })
-      );
-    },
-    [session?.access_token, dispatch, foundStates]
-  );
+    const wasFound = !!foundPlates[plateId];
+    dispatch(togglePlateProgress({ plateId, wasFound, accessToken: session.access_token }));
+  };
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -57,10 +45,12 @@ export default function PlateList({ data }: PlateListProps) {
         <PlateCard
           key={state.code}
           state={state}
-          found={!!foundStates[state.code]}
-          onToggle={() => toggleFound(state.code)}
+          foundPlates={foundPlates}
+          onTogglePlate={handleTogglePlate}
         />
       ))}
     </div>
   );
 }
+
+

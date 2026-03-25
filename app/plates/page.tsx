@@ -41,7 +41,7 @@ const filteredStates = useMemo(() => {
         License Plate Index
       </h1>
 
-      <p className="text-center text-gray-600 mb-10">
+      <p className="text-center text-white-600 mb-10">
         Check off each state as you spot their license plates!
       </p>
 

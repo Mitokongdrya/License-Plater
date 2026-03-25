@@ -3,13 +3,13 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 // ── Types ──────────────────────────────────────────────────────────
 
 type ProgressState = {
-  foundStates: { [code: string]: boolean };
+  foundPlates: { [plateId: string]: boolean };
   loading: boolean;
   error: string | null;
 };
 
 const initialState: ProgressState = {
-  foundStates: {},
+  foundPlates: {},
   loading: false,
   error: null,
 };
@@ -27,10 +27,10 @@ export const fetchProgress = createAsyncThunk(
       if (!res.ok) return rejectWithValue("Failed to fetch progress");
 
       const { progress } = await res.json();
-      const found: { [code: string]: boolean } = {};
+      const found: { [plateId: string]: boolean } = {};
       for (const p of progress) {
-        if (p.plate?.state?.code) {
-          found[p.plate.state.code] = true;
+        if (p.plate?.id) {
+          found[p.plate.id] = true;
         }
       }
       return found;
@@ -40,27 +40,18 @@ export const fetchProgress = createAsyncThunk(
   }
 );
 
-/** Toggle a state's "found" status (optimistic update handled in slice) */
-export const toggleProgress = createAsyncThunk(
-  "progress/toggleProgress",
+/** Toggle a plate's "found" status (optimistic update handled in slice) */
+export const togglePlateProgress = createAsyncThunk(
+  "progress/togglePlateProgress",
   async (
     {
-      code,
+      plateId,
       wasFound,
       accessToken,
-    }: { code: string; wasFound: boolean; accessToken: string },
+    }: { plateId: string; wasFound: boolean; accessToken: string },
     { rejectWithValue }
   ) => {
-
     try {
-      // Look up the DB plate id for the "Standard" plate
-      const lookupRes = await fetch(
-        `/api/plates/lookup?stateCode=${code}&plateName=Standard`
-      );
-      if (!lookupRes.ok)
-        return rejectWithValue("Failed to look up plate");
-      const { plateId } = await lookupRes.json();
-
       if (wasFound) {
         // Remove progress
         await fetch("/api/progress/delete", {
@@ -82,12 +73,11 @@ export const toggleProgress = createAsyncThunk(
           body: JSON.stringify({ plateId }),
         });
       }
-
       // Return the new value so the fulfilled reducer can confirm it
-      return { code, found: !wasFound };
+      return { plateId, found: !wasFound };
     } catch (err: any) {
       // Return the old value so the rejected reducer can revert
-      return rejectWithValue({ code, found: wasFound });
+      return rejectWithValue({ plateId, found: wasFound });
     }
   }
 );
@@ -100,7 +90,7 @@ const progressSlice = createSlice({
   reducers: {
     /** Reset progress (e.g. on sign-out) */
     clearProgress(state) {
-      state.foundStates = {};
+      state.foundPlates = {};
       state.loading = false;
       state.error = null;
     },
@@ -113,7 +103,7 @@ const progressSlice = createSlice({
         state.error = null;
       })
       .addCase(fetchProgress.fulfilled, (state, action) => {
-        state.foundStates = action.payload;
+        state.foundPlates = action.payload;
         state.loading = false;
       })
       .addCase(fetchProgress.rejected, (state, action) => {
@@ -121,30 +111,30 @@ const progressSlice = createSlice({
         state.error = action.payload as string;
       });
 
-    // ─ toggleProgress (optimistic) ─
+    // ─ togglePlateProgress (optimistic) ─
     builder
-      .addCase(toggleProgress.pending, (state, action) => {
+      .addCase(togglePlateProgress.pending, (state, action) => {
         // Optimistic flip
-        const code = action.meta.arg.code;
-        state.foundStates[code] = !state.foundStates[code];
+        const plateId = action.meta.arg.plateId;
+        state.foundPlates[plateId] = !state.foundPlates[plateId];
       })
-      .addCase(toggleProgress.fulfilled, (state, action) => {
+      .addCase(togglePlateProgress.fulfilled, (state, action) => {
         // Confirm — payload already matches the optimistic value
-        const { code, found } = action.payload;
-        state.foundStates[code] = found;
+        const { plateId, found } = action.payload;
+        state.foundPlates[plateId] = found;
       })
-      .addCase(toggleProgress.rejected, (state, action) => {
+      .addCase(togglePlateProgress.rejected, (state, action) => {
         // Revert the optimistic flip
         if (
           action.payload &&
           typeof action.payload === "object" &&
-          "code" in action.payload
+          "plateId" in action.payload
         ) {
-          const { code, found } = action.payload as {
-            code: string;
+          const { plateId, found } = action.payload as {
+            plateId: string;
             found: boolean;
           };
-          state.foundStates[code] = found;
+          state.foundPlates[plateId] = found;
         }
       });
   },

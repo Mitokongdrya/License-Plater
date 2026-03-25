@@ -10,7 +10,7 @@ export default function MapPage() {
   const { session } = useAuth();
   const dispatch = useAppDispatch();
 
-  const foundStates = useAppSelector((s) => s.progress.foundStates);
+  const foundPlates = useAppSelector((s) => s.progress.foundPlates);
   const loading = useAppSelector((s) => s.progress.loading);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function MapPage() {
     dispatch(fetchProgress(session.access_token));
   }, [session?.access_token, dispatch]);
 
-  const foundCount = Object.values(foundStates).filter(Boolean).length;
+  const foundCount = Object.values(foundPlates).filter(Boolean).length;
 
   return (
     <main className="p-6 space-y-4">
@@ -29,7 +29,7 @@ export default function MapPage() {
           : "Sign in to see your progress on the map."}
       </p>
       {loading && <p className="text-gray-400">Loading your progress...</p>}
-      <ChoroplethMapWrapper foundStates={foundStates} />
+      <ChoroplethMapWrapper foundStates={foundPlates} />
     </main>
   );
 }
